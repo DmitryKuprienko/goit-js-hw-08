@@ -9,11 +9,11 @@ player.on('play', function() {
     console.log('played the video!');
 });
 
-
+console.log(player)
 
 const onPlay = function(data) {
-    console.log(data)
-    // data is an object containing properties specific to that event
+    console.log(player)
+    
 };
 
 player.on('play', onPlay);
