@@ -22,6 +22,7 @@ function onClickImg(event) {
   event.preventDefault();  
 
   if (event.target.nodeName !== "IMG") {
+  console.log(event.target.nodeName)
     return;
   }
   lightbox.open();
