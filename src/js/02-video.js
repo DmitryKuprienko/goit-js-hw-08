@@ -13,10 +13,10 @@ player.on('timeupdate', throttle(onPlay, 1000));
 const parseLocStor = JSON.parse(
   localStorage.getItem('videoplayer-current-time')
 );
-const _secondLocStor = parseLocStor !== null ? parseLocStor.seconds : 0;
+const secondLocStor = parseLocStor !== null ? parseLocStor.seconds : 0;
 
 player
-  .setCurrentTime(_secondLocStor)
+  .setCurrentTime(secondLocStor)
   .then(function (seconds) {})
   .catch(function (error) {
     switch (error.name) {
