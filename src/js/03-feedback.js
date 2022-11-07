@@ -18,7 +18,8 @@ checkingLocalStorage();
 
 function onFormSubmit(event) {
     event.preventDefault();
-    // console.log('LC->' ,localStorage.getItem(STORAGE_KEY));
+    
+    console.log('sent data->' , JSON.parse(localStorage.getItem(STORAGE_KEY)));
 
     event.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY);
